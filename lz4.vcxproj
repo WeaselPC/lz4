@@ -40,14 +40,14 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>bin\Debug-windows-x86_64\lz4\</OutDir>
-    <IntDir>bin-int\Debug-windows-x86_64\lz4\</IntDir>
+    <OutDir>$(ProjectDir)bin\Debug-windows-x86_64\lz4\</OutDir>
+    <IntDir>$(ProjectDir)bin-int\Debug-windows-x86_64\lz4\</IntDir>
     <TargetName>lz4</TargetName>
     <TargetExt>.lib</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>bin\Release-windows-x86_64\lz4\</OutDir>
-    <IntDir>bin-int\Release-windows-x86_64\lz4\</IntDir>
+    <OutDir>$(ProjectDir)bin\Release-windows-x86_64\lz4\</OutDir>
+    <IntDir>$(ProjectDir)bin-int\Release-windows-x86_64\lz4\</IntDir>
     <TargetName>lz4</TargetName>
     <TargetExt>.lib</TargetExt>
   </PropertyGroup>
@@ -64,6 +64,8 @@
     <Link>
       <SubSystem>Windows</SubSystem>
     </Link>
+    <ProjectReference>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -78,6 +80,8 @@
     <Link>
       <SubSystem>Windows</SubSystem>
     </Link>
+    <ProjectReference>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="lib\lz4.h" />
